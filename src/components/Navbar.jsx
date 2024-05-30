@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 import { useState } from "react";
-import logo from "../assets/logo.svg";
+import logo from "../assets/logo.jpg";
 import argent from "../assets/argentLogo.svg";
 import { connect, disconnect } from "get-starknet";
 import { useConnectWallet } from "../context/ConnectContext";
@@ -23,7 +23,7 @@ function Navbar({ classes }) {
     <div
       className={`${classes} flex justify-between items-center bg-black py-5 px-[80px]`}
     >
-      <img src={logo} alt="" />
+      <img src={logo} className="w-10 h-10" alt="" />
       {!connection?.isConnected ? (
         <button
           className="py-[15px] px-[42px] bg-white text-[#121212] rounded-[5px]"
